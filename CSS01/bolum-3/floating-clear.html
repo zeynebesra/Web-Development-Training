@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #container {
+      background-color: antiquewhite;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: rgb(24, 157, 113);
+      float: right;
+    }
+    /* arkaplan color algılaması için */
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+  <body>
+    <div id="container" class="clearfix">
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+      <!-- <div style="clear: both"></div> -->
+    </div>
+    <p>
+      Cascading Style Sheets (Basamaklı Stil Şablonları ya da Basamaklı Biçim
+      Sayfaları, bilinen kısa adıyla CSS), HTML'e ek olarak metin ve format
+      biçimlendirme alanında fazladan olanaklar sunan bir işaretleme dilidir.
+    </p>
+  </body>
+</html>
